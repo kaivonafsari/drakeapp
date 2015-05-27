@@ -5,6 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var passport = require('passport');
+
 //var request = require('request');
 var multer  = require('multer');
 
@@ -83,11 +84,13 @@ module.exports = function(app, express){
   app.use('/api/votes', passport.authenticate('facebook-token'), voteRouter);
 
 
+
   //Used to grab user information from the user proprty of request. Provides FB info for name and profile picture
   app.get('/api/profileID', passport.authenticate('facebook-token'), 
     function(req, res){
     
       res.send(req.user);
+
   });
 
   //Adding routes
