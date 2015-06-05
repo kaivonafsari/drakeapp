@@ -18,6 +18,29 @@ $dark:                            #444 !default;
 h2, h3 {
   color: silver !important; }
 
+* {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.font {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-weight: normal !important;
+}
+
+.tagline {
+  color: white !important;
+  top: 19% !important;
+  position: relative !important;
+  left: 23% !important;
+}
+
+.favorTitle {
+  margin-top: 5px !important;
+  text-align: center !important;
+  margin-bottom: 5px !important;
+
+}
+
 .distance {
   display: inline-block !important; }
 
@@ -26,6 +49,14 @@ h2, h3 {
   -webkit-transition: height 0.8s !important;
   -moz-transition: height 0.8s !important;
   transition: height 0.8s !important; }
+
+.login {
+  background-image: url("http://i.giphy.com/j94zatfSSZ440.gif") !important;
+  background-size: cover !important;
+  height: 110% !important;
+  background-repeat: none !important;
+}
+
 
 .set-height {
   max-height: 40px !important; }
@@ -61,7 +92,8 @@ h2, h3 {
 #req-input, #feed-input {
   margin: 0 auto;
   border-radius: 5px;
-  width: 80%; }
+  width: 80%;
+  text-align: center;}
 
 .logo {
   top: 100px;
@@ -75,6 +107,14 @@ h2, h3 {
 
 .hiddenmap {
   display: none !important; }
+
+.oauth_button {
+  height:50px !important;
+  top: 68% !important;
+  left: 43% !important;
+  border-radius: 50% !important;
+  opacity: 0.5 !important;
+}
 
 .secret {
   position: relative !important;
@@ -153,8 +193,14 @@ h2, h3 {
   transform: translateY(-50%); }
 
 .lolol {
-  border-right: solid 1px !important;
+  border: none 1px !important;
   color: white !important; }
+
+.lolol1 {
+  border: 1px !important;
+  border-color: white !important;
+  border-radius: 50% !important;
+}
 
 /*
 #pac-input {
